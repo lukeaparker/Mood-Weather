@@ -1,0 +1,29 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${PASSWORD}
+    ports:
+      - 27017:27017
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint:
+      - flask
+      - run
+      - --host=0.0.0.0
+    environment:
+      PYTHONUNBUFFERED: 1
+      FLASK_DEBUG: 1
+    ports:
+      - 5000:5000
+    depends_on:
+      - mongo
+    links:
+      - mongo
+    volumes: ['.:/app']
