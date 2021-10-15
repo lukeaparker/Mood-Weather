@@ -1,3 +1,4 @@
+![alt text](https://github.com/lukeaparker/napkin-server/blob/master/thumbnails/mood-weeather-thumbnail.png)
 # Mood-Weather
 ### Welcome to Mood-Weather. This app is designed to collect data about how users feel about the weather. 
 

@@ -27,6 +27,7 @@ def weather():
     city = request.form['city']
     base_url = 'https://api.openweathermap.org/data/2.5/weather?'
     url = base_url + "q=" + city + "&units=imperial" + "&appid=" + API_KEY
+    print(url)
     response = requests.get(url)
     data = response.json()
     icon = data['weather'][0]['icon']
