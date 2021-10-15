@@ -1,4 +1,4 @@
-![alt text](https://github.com/lukeaparker/reddit.jspart2/blob/master/thumbnails/reddit-thumbnail.png)
+![alt text](https://github.com/lukeaparker/Mood-Weather/blob/master/thumbnails/mood-weather-thumbnail.png)
 # Mood-Weather
 ### Welcome to Mood-Weather. This app is designed to collect data about how users feel about the weather. 
 
